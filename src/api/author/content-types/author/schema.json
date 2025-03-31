@@ -19,7 +19,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "email": {
       "type": "string"
@@ -28,6 +32,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
+      "mappedBy": "author"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
       "mappedBy": "author"
     }
   }

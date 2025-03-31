@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_product": {
+      "type": "string"
+    },
+    "description_product": {
+      "type": "text"
+    },
+    "image_product": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "detail_product": {
+      "type": "blocks"
+    }
+  }
+}
