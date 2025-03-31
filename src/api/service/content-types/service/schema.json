@@ -1,25 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "services",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "product",
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "name_product": {
+    "title": {
       "type": "string"
     },
-    "description_product": {
+    "description": {
       "type": "text"
     },
-    "image_product": {
+    "thumbnail_service": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -28,11 +28,14 @@
         "audios"
       ]
     },
-    "detail_product": {
+    "detail_service": {
       "type": "blocks"
     },
-    "price_product": {
-      "type": "decimal"
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "services"
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "online_shops",
+  "info": {
+    "singularName": "online-shop",
+    "pluralName": "online-shops",
+    "displayName": "online_shop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "text"
+    }
+  }
+}
